@@ -365,6 +365,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
+        <ImageView
+            android:id="@+id/imageWatchlist"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/background_fab"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_watchlist"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/colorTextIcons" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

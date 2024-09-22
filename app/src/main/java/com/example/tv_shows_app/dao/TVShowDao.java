@@ -8,7 +8,6 @@ import androidx.room.Query;
 
 import com.example.tv_shows_app.models.TVShow;
 
-import java.util.Comparator;
 import java.util.List;
 
 import io.reactivex.Completable;
@@ -23,5 +22,8 @@ public interface TVShowDao {
     Completable addToWatchlist(TVShow tvShow);
 
     @Delete
-    void removeFromWatchlist(TVShow tvShow);
+    Completable removeFromWatchlist(TVShow tvShow);
+
+    @Query("SELECT * FROM tvShows WHERE id = :tvShowId")
+    Flowable<TVShow> getTVShowFromWatchlist(String tvShowId);
 }

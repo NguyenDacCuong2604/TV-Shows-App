@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.example.tv_shows_app.TVShowsDatabase;
+import com.example.tv_shows_app.dao.TVShowsDatabase;
 import com.example.tv_shows_app.models.TVShow;
 import com.example.tv_shows_app.repositories.TVShowDetailsRepository;
 import com.example.tv_shows_app.responses.TVShowDetailsResponse;
